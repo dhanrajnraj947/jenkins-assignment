@@ -1,0 +1,23 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/practice1
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/practice1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dhanrajnraj947/c-test.git # timeout=10
+Fetching upstream changes from https://github.com/dhanrajnraj947/c-test.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/dhanrajnraj947/c-test.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 562ccc7422106e7ac07245779078f8d3a6fd9ded (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 562ccc7422106e7ac07245779078f8d3a6fd9ded # timeout=10
+Commit message: "Delete ABC.exe"
+ > git rev-list --no-walk 562ccc7422106e7ac07245779078f8d3a6fd9ded # timeout=10
+[practice1] $ /bin/sh -xe /tmp/jenkins4379300749026538644.sh
++ cd /var/lib/jenkins/workspace/practice1
++ make
+make: 'ABC.exe' is up to date.
+Finished: SUCCESS

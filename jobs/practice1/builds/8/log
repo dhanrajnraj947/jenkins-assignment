@@ -1,0 +1,24 @@
+Started by GitHub push by dhanrajnraj947
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/practice1
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/practice1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dhanrajnraj947/c-test.git # timeout=10
+Fetching upstream changes from https://github.com/dhanrajnraj947/c-test.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/dhanrajnraj947/c-test.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision f1c7eedde1cac1e0b9e7aaf9d9d6d6e570c4d4a8 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f1c7eedde1cac1e0b9e7aaf9d9d6d6e570c4d4a8 # timeout=10
+Commit message: "Update fact.c"
+ > git rev-list --no-walk 562ccc7422106e7ac07245779078f8d3a6fd9ded # timeout=10
+[practice1] $ /bin/sh -xe /tmp/jenkins6807078789139141868.sh
++ cd /var/lib/jenkins/workspace/practice1
++ make
+gcc -c fact.c
+gcc -o ABC.exe main.o big3.o fact.o rev.o
+Finished: SUCCESS
